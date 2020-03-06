@@ -1,0 +1,17 @@
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\bin\Debug\Cloud_CRUD.dll.config
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\bin\Debug\Cloud_CRUD.dll
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\bin\Debug\Cloud_CRUD.pdb
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\bin\Debug\EntityFramework.dll
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\bin\Debug\EntityFramework.SqlServer.dll
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\bin\Debug\EntityFramework.xml
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\bin\Debug\EntityFramework.SqlServer.xml
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\obj\Debug\Cloud_CRUD.csprojAssemblyReference.cache
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\obj\Debug\Cloud_CRUD.csproj.CoreCompileInputs.cache
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\obj\Debug\Cloud_CRUD.csproj.CopyComplete
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\obj\Debug\Cloud_CRUD.dll
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\obj\Debug\Cloud_CRUD.pdb
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\obj\Debug\Cloud_CRUD.Migrations.init.resources
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\obj\Debug\Cloud_CRUD.csproj.GenerateResource.cache
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\obj\Debug\Cloud_CRUD.Migrations.init2.resources
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\obj\Debug\Cloud_CRUD.Migrations.init3.resources
+E:\SOC_Project\Cloud_CRUD\Cloud_CRUD\obj\Debug\Cloud_CRUD.Migrations.init4.resources

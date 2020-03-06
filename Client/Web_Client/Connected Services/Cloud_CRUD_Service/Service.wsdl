@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Cloud_CRUD/Service/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Cloud_CRUD/Service/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/Cloud_CRUD/Service/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Cloud_CRUD" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="Operations_GetConnectionString_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConnectionString" />
+  </wsdl:message>
+  <wsdl:message name="Operations_GetConnectionString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConnectionStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Add_File_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add_File" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Add_File_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Add_FileResponse" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Read_File_InputMessage">
+    <wsdl:part name="parameters" element="tns:Read_File" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Read_File_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Read_FileResponse" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Fetch_All_Files_InputMessage">
+    <wsdl:part name="parameters" element="tns:Fetch_All_Files" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Fetch_All_Files_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Fetch_All_FilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="Operations_getUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUser" />
+  </wsdl:message>
+  <wsdl:message name="Operations_getUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Remove_File_InputMessage">
+    <wsdl:part name="parameters" element="tns:Remove_File" />
+  </wsdl:message>
+  <wsdl:message name="Operations_Remove_File_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Remove_FileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Operations">
+    <wsdl:operation name="GetConnectionString">
+      <wsdl:input wsaw:Action="http://tempuri.org/Operations/GetConnectionString" message="tns:Operations_GetConnectionString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Operations/GetConnectionStringResponse" message="tns:Operations_GetConnectionString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/Operations/Register" message="tns:Operations_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Operations/RegisterResponse" message="tns:Operations_Register_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/Operations/Login" message="tns:Operations_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Operations/LoginResponse" message="tns:Operations_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Add_File">
+      <wsdl:input wsaw:Action="http://tempuri.org/Operations/Add_File" message="tns:Operations_Add_File_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Operations/Add_FileResponse" message="tns:Operations_Add_File_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Read_File">
+      <wsdl:input wsaw:Action="http://tempuri.org/Operations/Read_File" message="tns:Operations_Read_File_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Operations/Read_FileResponse" message="tns:Operations_Read_File_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Fetch_All_Files">
+      <wsdl:input wsaw:Action="http://tempuri.org/Operations/Fetch_All_Files" message="tns:Operations_Fetch_All_Files_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Operations/Fetch_All_FilesResponse" message="tns:Operations_Fetch_All_Files_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/Operations/getUser" message="tns:Operations_getUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Operations/getUserResponse" message="tns:Operations_getUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Remove_File">
+      <wsdl:input wsaw:Action="http://tempuri.org/Operations/Remove_File" message="tns:Operations_Remove_File_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/Operations/Remove_FileResponse" message="tns:Operations_Remove_File_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_Operations" type="tns:Operations">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetConnectionString">
+      <soap:operation soapAction="http://tempuri.org/Operations/GetConnectionString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/Operations/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/Operations/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Add_File">
+      <soap:operation soapAction="http://tempuri.org/Operations/Add_File" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Read_File">
+      <soap:operation soapAction="http://tempuri.org/Operations/Read_File" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fetch_All_Files">
+      <soap:operation soapAction="http://tempuri.org/Operations/Fetch_All_Files" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <soap:operation soapAction="http://tempuri.org/Operations/getUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Remove_File">
+      <soap:operation soapAction="http://tempuri.org/Operations/Remove_File" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_Operations" binding="tns:BasicHttpBinding_Operations">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/Cloud_CRUD/Service/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
